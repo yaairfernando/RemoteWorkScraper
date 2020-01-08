@@ -41,6 +41,22 @@ class Scraper
     ruby
   end
 
+  def reactJobs(jobList)
+    react = Array.new
+    jobList.each do |jobItem|
+      react << jobItem if jobItem[:title].include?("React") || jobItem[:title].include?("Redux")
+    end
+    react
+  end
+
+  def jsJobs(jobList)
+    js = Array.new
+    jobList.each do |jobItem|
+      js << jobItem if jobItem[:title].include?("JavaScript") || jobItem[:title].include?("EC6")
+    end
+    js
+  end
+
 end
 
 def scraper
