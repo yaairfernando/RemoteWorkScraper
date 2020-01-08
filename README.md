@@ -3,7 +3,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![LinkedIn][linkedin-shield2]][linkedin-url2]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -117,7 +116,5 @@ Give a ⭐️ if you like this project!
 [license-shield]: https://img.shields.io/github/license/YairFernando67/RemoteWorkScraper.svg?style=flat-square
 [license-url]: https://github.com/YairFernando67/RemoteWorkScraper/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/kitzia-paola-vidal/
-[linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url2]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
+[linkedin-url]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
 [product-screenshot]: img/logoRepo.jpg
