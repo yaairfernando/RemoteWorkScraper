@@ -116,4 +116,4 @@ Give a ⭐️ if you like this project!
 [linkedin-url]: https://www.linkedin.com/in/kitzia-paola-vidal/
 [linkedin-shield2]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url2]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
-[product-screenshot]: img/logoRepo.png
+[product-screenshot]: img/logoRepo.jpg
