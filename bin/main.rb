@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# require_relative '../lib/scraper'
-# require_relative '/loader.rb'
+require_relative '../lib/scraper'
 
 input = 1
 # while welcome_input == 1
@@ -19,7 +18,11 @@ input = 1
   case input
     when 1
       print "Loading Ruby and Rails jobs....."
-      
+      scraper = Scraper.new()
+      jobs = scraper.getData
+      jobs.each do |job|
+        p job
+      end
     when 2
       print "Loading React jobs....."
     when 3

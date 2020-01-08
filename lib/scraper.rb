@@ -3,6 +3,24 @@ require 'httparty'
 require 'byebug'
 require 'open-uri'
 
+class Scraper
+  attr_reader :url
+  def initialize
+    @url = 'https://weworkremotely.com/#job-listings'
+    @jobListing = Array.new
+  end
+
+  def getData
+    data = Nokogiri::HTML(open(@url))
+    byebug
+    jobs = data.css('div.jobs-container section.jobs article ul li')
+    jobs
+  end
+
+  
+
+end
+
 def scraper
   url = 'https://weworkremotely.com/#job-listings'
   # unparsed_page = HTTParty.get(url)
@@ -26,10 +44,18 @@ def scraper
   ruby = Array.new
   react = Array.new
   js = Array.new
+  front_end = Array.new
+  back_end = Array.new
+  full_stack = Array.new
+  software_engineer = Array.new
   jobList.each do |jobItem|
     react << jobItem if jobItem[:title].include?("React") || jobItem[:title].include?("Redux")
     ruby << jobItem if jobItem[:title].include?("Rails") || jobItem[:title].include?("Ruby")
     js << jobItem if jobItem[:title].include?("EC6") || jobItem[:title].include?("JavaScript")
+    front_end << jobItem if jobItem[:title].include?("Front")
+    back_end << jobItem if jobItem[:title].include?("Back")
+    full_stack << jobItem if jobItem[:title].include?("Full")
+    software_engineer << jobItem if jobItem[:title].include?("Software")
   end
   p "There are #{ruby.size} jobs in Rails"
   ruby.each do |rubyJob|
@@ -43,6 +69,25 @@ def scraper
   js.each do |jsJob|
     p jsJob
   end
+  p "There are #{front_end.size} jobs in Front end"
+  front_end.each do |fJob|
+    p fJob
+  end
+
+  p "There are #{back_end.size} jobs in Back End"
+  back_end.each do |bJob|
+    p bJob
+  end
+
+  p "There are #{full_stack.size} jobs in Full Stack"
+  full_stack.each do |fJob|
+    p fJob
+  end
+
+  p "There are #{software_engineer.size} jobs in Payton"
+  software_engineer.each do |fJob|
+    p fJob
+  end
 end
 
-scraper
+# scraper
