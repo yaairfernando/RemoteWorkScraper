@@ -53,7 +53,7 @@ Click on the image at the top or in the following [link](https://gitpod.io/githu
 * In the left panel, open the bin folder and select "main.rb"
 * Click on the console and type `cd bin` and hit enter to go to the bin folder
 * Click on the console and type `./main.rb` and hit enter to start the game
-Now you can select what type of job you want to look for and you will get the list of jobs related
+* Now you can select what type of job you want to look for and you will get the list of jobs related
 to that programming languaje!!
 
 ## Gem List
