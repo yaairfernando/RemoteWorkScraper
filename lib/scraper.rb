@@ -12,12 +12,34 @@ class Scraper
 
   def getData
     data = Nokogiri::HTML(open(@url))
-    byebug
     jobs = data.css('div.jobs-container section.jobs article ul li')
     jobs
   end
 
-  
+  def getJobListing(jobList)
+    @jobListing
+    jobList.each do |jobItem|
+      job = {
+        title: jobItem.css('a span.title').text,
+        company: jobItem.css('a span.company').text,
+        region: jobItem.css('a span.region').text,
+        new: jobItem.css('span.new').text,
+        featured: jobItem.css('a span.featured').text,
+        description: jobItem.css('a  span:nth-child(6)').text,
+        url: "https://weworkremotely.com" +  jobItem.xpath('a/@href').first.value
+      }
+      @jobListing << job
+    end
+    @jobListing
+  end
+
+  def rubyJobs(jobList)
+    ruby = Array.new
+    jobList.each do |jobItem|
+      ruby << jobItem if jobItem[:title].include?("Rails") || jobItem[:title].include?("Ruby")
+    end
+    ruby
+  end
 
 end
 
