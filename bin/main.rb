@@ -19,6 +19,7 @@ input = 1
   case input
     when 1
       print "Loading Ruby and Rails jobs....."
+      
     when 2
       print "Loading React jobs....."
     when 3
