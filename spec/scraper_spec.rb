@@ -28,4 +28,33 @@ RSpec.describe 'RemoteWork Scraper' do
       expect(scraper.fetch_job_listing([])).not_to be([].size < 150)
     end
   end
+
+  describe 'ruby_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.ruby_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.ruby_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.ruby_jobs([])).not_to be([].size < 1)
+    end
+  end
+
+  describe 'react_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.react_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.react_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.react_jobs([])).not_to be([].size < 1)
+    end
+  end
+  
 end
