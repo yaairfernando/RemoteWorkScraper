@@ -3,6 +3,7 @@
 require 'nokogiri'
 require 'httparty'
 require 'byebug'
+require 'open-uri'
 
 class Scraper
   attr_reader :url
@@ -13,8 +14,8 @@ class Scraper
   end
 
   def fetch_data
-    html = HTTParty.get(@url)
-    data = Nokogiri::HTML(html)
+    # html = HTTParty.get(@url)
+    data = Nokogiri::HTML(open(@url))
     jobs = data.css('div.jobs-container section.jobs article ul li')
     jobs
   end

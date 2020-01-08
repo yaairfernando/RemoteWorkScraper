@@ -28,7 +28,7 @@ while welcome_input == 1
     when 1
       puts "Loading Ruby and Rails jobs....."
       rubyJobs = scraper.ruby_jobs(jobList)
-      puts "There are #{rubyJobs.size} jobs that might be interesting for you in Ruby:"
+      puts "**********There are #{rubyJobs.size} jobs that might be interesting for you in Ruby**********"
       rubyJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -43,7 +43,7 @@ while welcome_input == 1
     when 2
       puts "Loading React jobs....."
       reactJobs = scraper.react_jobs(jobList)
-      puts "There are #{reactJobs.size} jobs that might be interesting for you in React:"
+      puts "**********There are #{reactJobs.size} jobs that might be interesting for you in React**********"
       reactJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -58,7 +58,7 @@ while welcome_input == 1
     when 3
       puts "Loading JavaScript jobs....."
       jsJobs = scraper.js_jobs(jobList)
-      puts "There are #{jsJobs.size} jobs that might be interesting for you in JavaScript:"
+      puts "**********There are #{jsJobs.size} jobs that might be interesting for you in JavaScript**********"
       jsJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -73,7 +73,7 @@ while welcome_input == 1
     when 4
       puts "Loading FrontEnd jobs....."
       fJobs = scraper.f_jobs(jobList)
-      puts "There are #{fJobs.size} Front End jobs:"
+      puts "******************************There are #{fJobs.size} Front End jobs******************************"
       fJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -88,7 +88,7 @@ while welcome_input == 1
     when 5
       puts "Loading BackEnd jobs....."
       bJobs = scraper.b_jobs(jobList)
-      puts "There are #{bJobs.size} Back End jobs:"
+      puts "******************************There are #{bJobs.size} Back End jobs******************************"
       bJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -103,7 +103,7 @@ while welcome_input == 1
     when 6
       puts "Loading Software Engineer jobs....."
       seJobs = scraper.se_jobs(jobList)
-      puts "There are #{seJobs.size} jobs as Software Engineer :"
+      puts "*************************There are #{seJobs.size} jobs as Software Engineer*************************"
       seJobs.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
@@ -117,7 +117,7 @@ while welcome_input == 1
       end
     when 7
       puts "Loading all jobs....."
-      puts "There are #{jobList.size} jobs that might be interesting for you:"
+      puts "********************There are #{jobList.size} jobs that might be interesting for you********************"
       jobList.each do |job|
         puts "--------------------------"
         puts "Title: #{job[:title]}"
