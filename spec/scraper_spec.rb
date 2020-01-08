@@ -29,7 +29,7 @@ RSpec.describe 'RemoteWork Scraper' do
     end
   end
 
-  describe 'ruby_jobs' do
+  describe '#ruby_jobs' do
     it 'when we get the list of jobs related to this specific programming languaje' do
       expect(scraper.ruby_jobs([])).to eq([])
     end
@@ -39,11 +39,11 @@ RSpec.describe 'RemoteWork Scraper' do
     end
 
     it 'when we get the list of jobs with at least one item' do
-      expect(scraper.ruby_jobs([])).not_to be([].size < 1)
+      expect(scraper.ruby_jobs([])).not_to be([].empty?)
     end
   end
 
-  describe 'react_jobs' do
+  describe '#react_jobs' do
     it 'when we get the list of jobs related to this specific programming languaje' do
       expect(scraper.react_jobs([])).to eq([])
     end
@@ -53,8 +53,63 @@ RSpec.describe 'RemoteWork Scraper' do
     end
 
     it 'when we get the list of jobs with at least one item' do
-      expect(scraper.react_jobs([])).not_to be([].size < 1)
+      expect(scraper.react_jobs([])).not_to be([].empty?)
     end
   end
-  
+
+  describe '#js_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.js_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.js_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.js_jobs([])).not_to be([].empty?)
+    end
+  end
+
+  describe '#f_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.f_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.f_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.f_jobs([])).not_to be([].empty?)
+    end
+  end
+
+  describe '#b_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.b_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.b_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.b_jobs([])).not_to be([].empty?)
+    end
+  end
+
+  describe '#se_jobs' do
+    it 'when we get the list of jobs related to this specific programming languaje' do
+      expect(scraper.se_jobs([])).to eq([])
+    end
+
+    it 'when we get the list of jobs and not nil' do
+      expect(scraper.se_jobs([])).not_to be([].nil? == false)
+    end
+
+    it 'when we get the list of jobs with at least one item' do
+      expect(scraper.se_jobs([])).not_to be([].empty?)
+    end
+  end
 end
