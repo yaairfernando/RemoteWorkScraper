@@ -5,6 +5,7 @@ require 'open-uri'
 
 class Scraper
   attr_reader :url
+  # attr_accessor :jobListing
   def initialize
     @url = 'https://weworkremotely.com/#job-listings'
     @jobListing = Array.new
