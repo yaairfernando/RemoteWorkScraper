@@ -27,7 +27,11 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
+* [Gem List](#Gem-List)
+* [Roadmap](#Roadmap)
+* [Contact](#contact)
+* [Contributing](#Contributing)
+* [Show your support](#Show-your-support)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 <!-- ABOUT THE PROJECT -->
@@ -53,7 +57,7 @@ Click on the image at the top or in the following [link](https://gitpod.io/githu
 Now you can select what type of job you want to look for and you will get the list of jobs related
 to that programming languaje!!
 
-#### The Gem List
+## Gem List
 
 This is the list of the gems that are required
 
