@@ -42,6 +42,5 @@ class Scraper
       job_result << job_item if job_item[:title].downcase.include?(input.downcase)
     end
     job_result
-  end 
-
+  end
 end
