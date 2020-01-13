@@ -55,6 +55,7 @@ The project was developed using the following technologies:
 * Git 
 * Node
 * NPM
+* Ruby
 
 ## Usage
 
