@@ -36,51 +36,12 @@ class Scraper
     job_listing
   end
 
-  def ruby_jobs(job_list)
-    ruby = []
+  def search_job(job_list, input)
+    job_result = []
     job_list.each do |job_item|
-      ruby << job_item if job_item[:title].include?('Rails') || job_item[:title].include?('Ruby')
+      job_result << job_item if job_item[:title].downcase.include?(input.downcase)
     end
-    ruby
-  end
+    job_result
+  end 
 
-  def react_jobs(job_list)
-    react = []
-    job_list.each do |job_item|
-      react << job_item if job_item[:title].include?('React') || job_item[:title].include?('Redux')
-    end
-    react
-  end
-
-  def js_jobs(job_list)
-    js = []
-    job_list.each do |job_item|
-      js << job_item if job_item[:title].include?('JavaScript') || job_item[:title].include?('EC6')
-    end
-    js
-  end
-
-  def f_jobs(job_list)
-    front = []
-    job_list.each do |job_item|
-      front << job_item if job_item[:title].include?('Front')
-    end
-    front
-  end
-
-  def b_jobs(job_list)
-    back = []
-    job_list.each do |job_item|
-      back << job_item if job_item[:title].include?('Back')
-    end
-    back
-  end
-
-  def se_jobs(job_list)
-    se = []
-    job_list.each do |job_item|
-      se << job_item if job_item[:title].include?('Software')
-    end
-    se
-  end
 end
