@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './lib/scraper.rb'
+require_relative './../lib/scraper.rb'
 
 RSpec.describe 'RemoteWork Scraper' do
   scraper = Scraper.new
