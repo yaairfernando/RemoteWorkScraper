@@ -34,7 +34,6 @@
 * [Contributing](#Contributing)
 * [Show your support](#Show-your-support)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -150,9 +149,6 @@ Feel free to check the [issues page](https://github.com/YairFernando67/RemoteWor
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgements
-- [Microverse curriculum basic Ruby section](https://www.microverse.org/?grsf=6ns691)
-- [The Odin project: Tic Tac Toe game](https://www.theodinproject.com/courses/ruby-programming/lessons/oop)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/YairFernando67/RemoteWorkScraper.svg?style=flat-square
