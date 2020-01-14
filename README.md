@@ -33,7 +33,7 @@
 * [Contact](#contact)
 * [Contributing](#Contributing)
 * [Show your support](#Show-your-support)
-* [Contact](#contact)
+* [Contact](#contact)Rohit Srinivas
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
