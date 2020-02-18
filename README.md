@@ -3,6 +3,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield2]][linkedin-url2]
+[![Hireable][hireable]][hireable-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -43,17 +45,30 @@ In this project we built a web scraper with ruby that fetchs a list of remote jo
 
 ### Built With
 The project was developed using the following technologies:
-- [RUBY](https://www.ruby-lang.org/es/)
-- [RUBOCOP LINTERN](https://github.com/microverseinc/linters-config/tree/master/ruby)
+- [Ruby](https://www.ruby-lang.org/es/)
+- [Rubocop Linter](https://github.com/microverseinc/linters-config/tree/master/ruby)
 
 ## Required Installations
 
 <p>Install the following to get this project running in your machine:</p>
 
-* Git 
 * Node
 * NPM
 * Ruby
+* Rails
+
+After installation, run `ruby -v` to make sure Ruby installed correctly. Example
+```
+$ ruby -v
+ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-linux]
+```
+
+Also make sure that Rails is installed, but running `rails -v`. 
+Example
+```
+$ rails -v
+Rails 6.0.2.1
+```
 
 ## Usage
 
@@ -85,22 +100,22 @@ Install dependencies
 
 
 ```Shell
-user@pc:~$ bundle install
+user@pc:~/RemoteWorkScraper$ bundle install
 ```
 
 Go to the bin folder
 
 ```Shell
-user@pc:~$ cd bin
+user@pc:~/RemoteWorkScraper$ cd bin
 ```
 ```Shell
-user@pc:~$ chmod 755 main.rb
+user@pc:~/RemoteWorkScraper/bin$ chmod 755 main.rb
 ```
 
 Run the main.rb file to start the project:
 
 ```Shell
-user@pc:~$ ./main.rb
+user@pc:~/RemoteWorkScraper/bin$ ./main.rb
 ```
 
 ## Gem List
@@ -163,3 +178,5 @@ Give a ⭐️ if you like this project!
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
 [product-screenshot]: img/logoRepo.jpg
+[hireable]: https://cdn.rawgit.com/hiendv/hireable/master/styles/flat/yes.svg
+[hireable-url]: https://www.linkedin.com/in/softwaredeveloperyairfacio/
